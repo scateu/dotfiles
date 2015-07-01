@@ -1,1 +1,9 @@
-mailboxes "+INBOX" "+[Gmail].All Mail" "+[Gmail].Important" "+[Gmail].Trash" "+drafts" "+pin" "+sent" +spam
+set mbox_type = Maildir
+#set folder = /Users/scateu/Mail/scateu.me
+set folder = ~/Mail/scateu-gmail/
+set spoolfile = "+INBOX"
+set postponed = "+Drafts"
+set trash = "+Trash"
+set record = "+Sent"
+
+mailboxes "+INBOX" "+Starred" "+Important" "+Trash" "+Drafts" "+Sent" "+Spam" 
