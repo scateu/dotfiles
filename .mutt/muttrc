@@ -45,3 +45,15 @@ set forward_quote
 ignore *                               # first, ignore all headers
 unignore from: to: cc: date: subject:  # then, show only these
 hdr_order from: to: cc: date: subject: # and in this order
+
+
+# autoview
+
+auto_view application/ms-tnef text/x-vcard
+auto_view application/x-chess application/x-lotus-notes
+auto_view text/html application/x-gzip application/x-gunzip
+auto_view application/rtf application/x-rath
+auto_view application/msword
+auto_view image/*
+
+alternative_order text/plain text/enriched text/html application/pgp application/postscript image/*
